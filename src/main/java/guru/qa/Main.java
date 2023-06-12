@@ -24,7 +24,6 @@ public class Main {
         System.out.println(mult(intNum, 20) > 0 || multDuo(120, doubleNum) > 0);
         System.out.println(res(floatNum, 5) > 5.0 && multDuo(5, floatNum) > 5.0);
     }
-    // & && | || !
 
     public static int sum(byte first, byte second) {
         return first + second;
