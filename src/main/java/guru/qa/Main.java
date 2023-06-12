@@ -9,13 +9,14 @@ public class Main {
         byte byteNum = 127;
         short shortNum = 32767;
         int intNum = 2147483647;
-        long longNum = 922337203685L;
+        long longNum = 9_223_372_036_854_775_807L;
         float floatNum = 8.8F;
         double doubleNum = 8.8;
 
-        System.out.println("byte " + (byte) sum(byteNum, (byte) 5));
-        System.out.println("short " + (short) diff(shortNum, 65550));
-        System.out.println("int " + mult(intNum, 20));
+        System.out.println("переполнение для типа byte " + (byte) sum(byteNum, (byte) 5));
+        System.out.println("переполнение для типа short " + (short) diff(shortNum, 65550));
+        System.out.println("переполнение для типа int " + mult(intNum, 20));
+        System.out.println("переполнение для типа long " + mult(intNum, 7));
         System.out.println("long " + div(longNum, 7));
         System.out.println("float " + res(floatNum, 5));
         System.out.println("int, double " + multDuo(120, doubleNum));
